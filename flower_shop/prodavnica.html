@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header_prodavnica">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <br/>
+                <h2>Narucivanje</h2>
+                <hr/>
+                <div class="center">
+                    <form name="forma">
+                        <table>
+                            <tr>
+                                <td>Ime:</td>
+                                <td>
+                                    <input type="text" name="ime">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Prezime:</td>
+                                <td>
+                                    <input type="text" name="prezime">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mejl:</td>
+                                <td>
+                                    <input type="text" name="mejl">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Aranzman:</td>
+                                <td>
+                                    <select name="aranzman">
+                                        <option>Box 5</option>
+                                        <option>Box 10</option>
+                                        <option>Box 100</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dodatno:</td>
+                                <td>
+                                    <input type="checkbox" name="posveta" > Posveta
+                                    <input type="checkbox" name="brzadostava"> Brza dostava
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" colspan="2">
+                                    <input type="button" class="btn btn-success" value="Naruci" onclick="naruci()">
+                                    <input type="button" class="btn btn-danger" value="Korpa" onclick="korpa()">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
